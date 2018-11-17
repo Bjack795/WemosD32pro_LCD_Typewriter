@@ -8,6 +8,7 @@ Hardware:
 - Wemos D32 pro (https://wiki.wemos.cc/products:d32:d32_pro)
 - 16x02 Alphanumeric LCD (http://wiki.sunfounder.cc/index.php?title=LCD1602_Module)
 - Keyboard USB Host (http://www.hobbytronics.co.uk/usb-host-keyboard)
+- wires, headers and resistances
 
 Software:
 All the libraries and files included in TYPEWRITER folder.
