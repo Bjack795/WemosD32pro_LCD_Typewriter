@@ -8,6 +8,7 @@ This is a rudimental typewriter using Wemos D32 pro, an LCD1602 and a USB host f
 - 16x02 Alphanumeric LCD (http://wiki.sunfounder.cc/index.php?title=LCD1602_Module)
 - Keyboard USB Host (http://www.hobbytronics.co.uk/usb-host-keyboard)
 - wires, headers and resistances
+- microSD
 
 The schematics of the connections are in the LCD_TYPEWRITER_Connections.pdf file
 ![lcd_typewriter_connections](https://user-images.githubusercontent.com/42472256/48662719-26aa1c80-ea86-11e8-9ddc-a9b52ef8c79b.jpg)
