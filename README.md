@@ -10,4 +10,14 @@ Hardware:
 - Keyboard USB Host (http://www.hobbytronics.co.uk/usb-host-keyboard)
 
 Software:
-All the libraries included in TYPEWRITER folder
+All the libraries and files included in TYPEWRITER folder.
+
+Arduino IDE must be used to upload all these files.
+
+REMEMBER:
+- Add the Wemos D32 pro from the Board Manager
+
+WEBSERVER RIGHTS:
+All the WebServer functions rights belong to @G6EJD, to whom goes my gratitude for the help given to this project.
+
+
