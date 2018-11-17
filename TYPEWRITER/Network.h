@@ -6,8 +6,8 @@ IPAddress local_IP(192, 168, 188, 14); // Set your server's fixed IP address her
 IPAddress gateway(192, 168, 188, 1);    // Set your network Gateway usually your Router base address (modificato)
 IPAddress subnet(255, 255, 255, 0);   // Set your network sub-network mask here
 IPAddress dns(192,168,188,1);           // Set your network DNS usually your Router base address(modificato)
-const char ssid_1[]     = "FRITZ!Box 7490";
-const char password_1[] = "4e6b6666";
+const char ssid_1[]     = "your_SSID1";
+const char password_1[] = "your_PASSWORD_for SSID1";
 
 const char ssid_2[]     = "your_SSID2";
 const char password_2[] = "your_PASSWORD_for SSID2";
