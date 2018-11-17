@@ -39,10 +39,13 @@ HardwareSerial Tastiera(1);
 LiquidCrystal lcd (RS,E,D4,D5,D6,D7);
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 String ANSWER;
-File CURSORFILE;
+File TEMPFILE;
 File NEWFILE;
 String PATHTEMP = "/Settings/temp.txt";
 String PATHCURSOR = "/Settings/cursor_file.txt";
+String PATHTESTI = "/Testi";
+String PATHSETTINGS = "/Settings";
+
 /////////////////////////////////////////////////
 #define XRES 16
 #define YRES 2
@@ -77,10 +80,19 @@ void setup() {
   ledcSetup(1, 12000, 8);
   lcd.createChar(0, ret_char);
   lcd.begin(XRES,YRES);
-  if(!SD.exists(PATHCURSOR))
+  if(!SD.exists(PATHSETTINGS))
   {
-    CURSORFILE = SD.open(PATHCURSOR, FILE_WRITE);
-    CURSORFILE.close();
+    SD.mkdir(PATHSETTINGS);
+
+  }
+   if(!SD.exists(PATHTESTI))
+  {
+    SD.mkdir(PATHTESTI);
+  }
+   if(!SD.exists(PATHCURSOR))
+  {
+    TEMPFILE = SD.open(PATHCURSOR, FILE_WRITE);
+    TEMPFILE.close();
   }
  
 }
