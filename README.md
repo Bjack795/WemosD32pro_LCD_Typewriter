@@ -18,6 +18,6 @@ REMEMBER:
 Add the Wemos D32 pro from the Board Manager
 
 WEBSERVER RIGHTS:
-All the WebServer functions rights belong to @G6EJD , to whom goes my gratitude for the help given to this project.
+All the WebServer functions rights belong to G6EJD (https://github.com/G6EJD), a genius to whom goes my gratitude for the help given to this project.
 
 
