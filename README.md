@@ -33,3 +33,9 @@ In the future the aim is to convert it to Epaper display.
 The keyboard will be an assembled mechanical one and the case will be 3d Printed
 
 ![scheme](https://user-images.githubusercontent.com/42472256/48662727-4e00e980-ea86-11e8-8cf3-20dca738d891.jpeg)
+
+
+To improve the project this could be an idea of the embedded keyboard, inventor 3d model of a custom GH60 keyboard:
+
+
+![gh60_render2](https://user-images.githubusercontent.com/42472256/48973720-c0edff80-f046-11e8-9203-d59c9dd1190e.png)
