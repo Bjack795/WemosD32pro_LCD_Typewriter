@@ -25,7 +25,7 @@ Add the Wemos D32 pro from the Board Manager
 ### WebServer Rights
 
 All the WebServer functions rights belong to G6EJD (https://github.com/G6EJD), a genius to whom goes my gratitude for the help given to this project.
-The functions are an implementation of this library https://github.com/Pedroalbuquerque/ESP32WebServer.
+The functions are an implementation of this library https://github.com/tzapu/WiFiManager/tree/development and of the standard Webserver.h built-in library.
 ## Still a prototype
 This is the actual aspect of the project.
 
