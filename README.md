@@ -14,7 +14,7 @@ The schematics of the connections are in the LCD_TYPEWRITER_Connections.pdf file
 ![lcd_typewriter_connections](https://user-images.githubusercontent.com/42472256/48662719-26aa1c80-ea86-11e8-9ddc-a9b52ef8c79b.jpg)
 
 ## Software
-All the libraries and files included in TYPEWRITER folder.
+All the libraries and files included in TYPEWRITER folder and downloaded from the library manager.
 
 Arduino IDE must be used to upload all these files.
 
