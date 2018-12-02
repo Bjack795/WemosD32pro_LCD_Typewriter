@@ -22,19 +22,36 @@
 
 void Webserver_setup(){
   Serial.begin(9600);
-  if (!WiFi.config(local_IP, gateway, subnet, dns)) { //WiFi.config(ip, gateway, subnet, dns1, dns2);
-    Serial.println("WiFi STATION Failed to configure Correctly"); 
-  } 
-  wifiMulti.addAP(ssid_1, password_1);  // add Wi-Fi networks you want to connect to, it connects strongest to weakest
-  wifiMulti.addAP(ssid_2, password_2);  // Adjust the values in the Network tab
-  wifiMulti.addAP(ssid_3, password_3);
-  wifiMulti.addAP(ssid_4, password_4);  // You don't need 4 entries, this is for example!
-  
-  Serial.println("Connecting ...");
-  while (wifiMulti.run() != WL_CONNECTED) { // Wait for the Wi-Fi to connect: scan for Wi-Fi networks, and connect to the strongest of the networks above
-    delay(250); Serial.print('.');
-  }
+  WiFiManager wm;
+  //wm.resetSettings();
+  bool res;
+  res = wm.autoConnect("BjackWifi","password"); // password protected ap
+  // IP for wifimanager:      192.168.4.1
+
+    if(!res) {
+        Serial.println("Failed to connect");
+        // ESP.restart();
+    } 
+    else {
+        //if you get here you have connected to the WiFi    
+        Serial.println("connected...yeey :)");
+        Serial.print("LocalIP :");
+        Serial.println(WiFi.localIP());
+        Serial.print("Gateway :");
+        Serial.println(WiFi.gatewayIP());
+        Serial.print("Subnet :");
+        Serial.println(WiFi.subnetMask());
+        Serial.print("SSID :");
+        Serial.println(WiFi.SSID());
   Serial.println("\nConnected to "+WiFi.SSID()+" Use IP address: "+WiFi.localIP().toString()); // Report which SSID and IP is in use
+
+  Serial.println();
+  Serial.println("THE WEBSERVER IS ON THIS IP:");
+  Serial.println(WiFi.localIP());
+  Serial.println();
+  Serial.println();
+  }
+
   // The logical name http://fileserver.local will also access the device if you have 'Bonjour' running or your system supports multicast dns
   if (!MDNS.begin(servername)) {          // Set your preferred server name, if you use "myserver" the address would be http://myserver.local/
     Serial.println(F("Error setting up MDNS responder!")); 

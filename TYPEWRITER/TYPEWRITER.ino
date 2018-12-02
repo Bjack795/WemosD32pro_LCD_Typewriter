@@ -3,9 +3,10 @@
 //ArrayCount(myarray) --> rows
 //ArrayCount(myarray[0]) --> rows
 /////////////////////////////////////////////////////////////////////////////////////////////
+  #include <WiFiManager.h>
+////////////////////////////////////////////////////////////////////////
   #include <WiFi.h>              // Built-in
-  #include <WiFiMulti.h>         // Built-in
-  #include <ESP32WebServer.h>    // https://github.com/Pedroalbuquerque/ESP32WebServer download and place in your Libraries folder
+  #include <WebServer.h>
   #include <ESPmDNS.h>
   #include "FS.h"
   
@@ -14,8 +15,7 @@
   #include "CSS.h"
   #include <SD.h> 
   #include <SPI.h>
-  WiFiMulti wifiMulti;
-  ESP32WebServer server(80);
+  WebServer server(80);
 void Webserver_setup();
 void Webserver_loop();
 void copy_file(String pathold, String pathnew);
